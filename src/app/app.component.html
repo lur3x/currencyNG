@@ -1,0 +1,15 @@
+  <mat-toolbar>
+    <span>Crypto Assistant</span>
+    <span class="example-spacer"></span>
+    <mat-form-field>
+      <mat-select
+        (valueChange)="sendCurrency($event)"
+        [(ngModel)]="selectedCurrency"
+        class="toolbar-select"
+      >
+        <mat-option selected value="UAH">UAH</mat-option>
+        <mat-option value="USD">USD</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </mat-toolbar>
+<router-outlet></router-outlet>
